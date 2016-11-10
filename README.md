@@ -17,4 +17,4 @@ Steps:
 # Quick summary #
 React boilerplate which contains all packages that are needed to start React project.
 
-It can be used with regular babel syntax or ES6 - Class syntax
+It can be used with regular babel syntax or ES6 - Class syntax.
