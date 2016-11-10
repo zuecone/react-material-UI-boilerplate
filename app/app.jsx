@@ -1,5 +1,6 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React from 'react'
+import ReactDOM from 'react-dom'
+import TodoApp from 'TodoApp'
 
 //render() - a function from ReactDOM package
 ReactDOM.render(

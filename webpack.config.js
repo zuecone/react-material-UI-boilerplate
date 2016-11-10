@@ -6,9 +6,13 @@ module.exports = {
 		path: __dirname,
 		filename: './public/bundle.js'
 	},
-	//take xtension array
+	//take extension array
 	resolve: {
 		root: __dirname,
+		modulesDirectories:[
+			'node_modules',
+			'./app/components' //Folder to look at for auto-alias
+		],
 		alias: {
 			
 		},
