@@ -5,6 +5,7 @@ Hence, Developers do not need specify alias for file paths in webpack config.
 It has all node packages which are needed to start React project.
 
 Steps:
+
 * clone this repo
 
 * At the root project folder, open command prompt run command: npm install
@@ -13,7 +14,7 @@ Steps:
 
 * At the root project folder, open command prompt run webpack -w 
 
-* Quick summary
-
+# Quick summary #
 React boilerplate which contains all packages that are needed to start React project.
+
 It can be used with regular babel syntax or ES6 - Class syntax
