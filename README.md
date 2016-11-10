@@ -6,10 +6,10 @@ It has all node packages which are needed to start React project.
 
 Steps:
 - clone this repo
-- run command: npm install
-- run node server.js in command prompt
-- run webpack -w in command prompt
+- At the root project folder, open command prompt run command: npm install
+- At the root project folder, open command prompt run command: run node server.js 
+- At the root project folder, open command prompt run webpack -w 
 
-### What is this repository for? ###
 * Quick summary
 React boilerplate which contains all packages that are needed to start React project.
+It can be used with regular babel syntax or ES6 - Class syntax
