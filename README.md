@@ -6,7 +6,9 @@ It has all node packages which are needed to start React project.
 
 Steps:
 
-* clone this repo
+* Clone this repo
+
+* Create folder components in the app folder
 
 * At the root project folder, open command prompt run command: npm install
 
