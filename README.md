@@ -1,14 +1,14 @@
 # React Boilerplate with Auto Alias #
 
 This repo is React boilerplate using auto alias specified webpack.config - modulesDirectories.
-Hence, Developers do not need specify alias for file paths in webpack config.
+Hence, Developers do not need specify alias for file paths in webpack config and it does not need specify file path in import or require statement.
 It has all node packages which are needed to start React project.
 
 Steps:
 
 * Clone this repo
 
-* Create "components" folder in the "app" folder. Put all components into this folder.
+* Create "components" folder in the "app" folder. Put all components into this "component" folder.
 
 * At the root project folder, open command prompt run command: npm install
 
