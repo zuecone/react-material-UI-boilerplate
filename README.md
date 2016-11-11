@@ -20,3 +20,15 @@ Steps:
 React boilerplate which contains all packages that are needed to start React project.
 
 It can be used with regular babel syntax or ES6 - Class syntax.
+
+# Example #
+Developer does not need require like:
+
+* var CustomComp = require('file_path/CustomComp') 
+* import CustomComp from 'file_path/CustomComp'
+
+Instead, developer can do:
+
+* var CustomComp = require('CustomComp')
+
+* import CustomComp from 'CustomComp'
