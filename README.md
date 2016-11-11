@@ -4,7 +4,7 @@ This repo is React boilerplate using auto alias specified webpack.config - modul
 Hence, Developers do not need specify alias for file paths in webpack config and it does not need specify file path in import or require statement.
 It has all node packages which are needed to start React project.
 
-Steps:
+# Usage: #
 
 * Clone this repo
 
