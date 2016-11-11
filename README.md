@@ -1,4 +1,4 @@
-# REACT Boilerplate with Auto Alias #
+# React Boilerplate with Auto Alias #
 
 This repo is React boilerplate using auto alias specified webpack.config - modulesDirectories.
 Hence, Developers do not need specify alias for file paths in webpack config.
