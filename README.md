@@ -8,7 +8,7 @@ Steps:
 
 * Clone this repo
 
-* Create "components" in the app folder. Put all components into this folder.
+* Create "components" folder in the "app" folder. Put all components into this folder.
 
 * At the root project folder, open command prompt run command: npm install
 
