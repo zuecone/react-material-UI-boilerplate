@@ -1,6 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TodoApp from 'TodoApp'
+
+var App = React.createClass({
+	render: function() {
+		return (
+			<div>
+				//Put your components tag here
+			</div>
+		)
+	}
+});
+
+//variable that is used inside render() function
+const appDOM = document.getElementById('app');
 
 var App = React.createClass({
 	render: function() {
@@ -8,8 +20,8 @@ var App = React.createClass({
 	}
 })
 
+const appDOM = document.getElementById('app')
 //render() - a function from ReactDOM package
 ReactDOM.render(
-			<App />,
-			document.getElementById('app')
+			<App />, appDOM
 );
