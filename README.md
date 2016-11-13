@@ -21,7 +21,7 @@ React boilerplate which contains all packages that are needed to start React pro
 
 It can be used with regular babel syntax or ES6 - Class syntax.
 
-# Example #
+# Example - Auto Alias #
 Developer does not need require like:
 
 * var CustomComp = require('file_path/CustomComp') 
