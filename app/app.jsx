@@ -1,9 +1,18 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Bootstrap from 'bootstrap.css'
+
+import Example from 'Example'
+
 
 var App = React.createClass({
 	render: function() {
-		//put your component below if needed
+		return (
+			<div class="container">
+				<Example />
+			</div>
+		)
+
 	}
 })
 

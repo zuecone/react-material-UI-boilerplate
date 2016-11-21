@@ -1,6 +1,10 @@
 module.exports = {
 	//tell where to process the code
-	entry: './app/app.jsx',
+	entry: [
+		'script!jquery/dist/jquery.min.js',
+		'script!bootstrap/dist/js/bootstrap.min.js',
+		'./app/app.jsx'
+	],
 	//specify the output
 	output: {
 		path: __dirname,
@@ -11,6 +15,7 @@ module.exports = {
 		root: __dirname,
 		modulesDirectories:[
 			'node_modules',
+			'node_modules/bootstrap/dist/css',			
 			'./app/components' //Folder to look at for auto-alias
 		],
 		alias: {
@@ -19,13 +24,25 @@ module.exports = {
 		extensions: ['', '.js', '.jsx']
 	},
 	module: {
-		loaders: [{
-			loader: 'babel-loader',
-			query: {
-				presets: ['react', 'es2015', 'stage-0']
+		loaders: [
+			{
+				test: /\.jsx?$/,
+				loader: 'babel-loader',
+				query: {
+					presets: ['react', 'es2015', 'stage-0'],
+					plugins: ['react-html-attrs']
+				},				
+				exclude: /(node_modules|bower_components)/
+			}, 
+			{
+				test: /\.css$/, 
+        		loader: "style-loader!css-loader" 
 			},
-			test: /\.jsx?$/,
-			exclude: /(node_modules|bower_components)/
-		}]
+			{
+				test: /\.(woff|woff2|eot|ttf|svg)$/, 
+        		loader: "url" 
+			}
+
+		]
 	}
 }
