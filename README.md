@@ -1,34 +1,38 @@
-# React Boilerplate with Auto Alias #
+**React Bootstrap Boilerplate**
 
-This repo is React boilerplate using auto alias specified webpack.config - modulesDirectories.
-Hence, Developers do not need specify alias for file paths in webpack config and it does not need specify file path in import or require statement.
-It has all node packages which are needed to start React project.
+React boilerplate which contains bootstrap packages into it.
 
-# Usage: #
+### Features: ###
+* It contains react with webpack configuration in it.
+* It has bootstrap package with webpack configuration to transpile bootstrap.
+* It has Jquery package with webpack configuration.
+* It has **class** attribute transpile into **className**.
 
-* Clone this repo
+### Webpack configs contains: ###
+* babels.
+* jquery. 
+* bootstrap.css and bootstrap.js
+* loaders needed for this boilerplate
 
-* Create "components" folder in the "app" folder. Put all components into this "component" folder.
+### Usages: ###
+* Clone or download repo
+* run npm install in command prompt as admin
+* run webpack --w
+* run node server.js in command prompt as admin.
+* put your component into components folder
+* Delete Example file if needed
 
-* At the root project folder, open command prompt run command: npm install
+### No Jquery Configuration ###
+If the project does not need JQuery, follow steps below:
 
-* At the root project folder, open command prompt run command: run node server.js 
+* Clone repo
+* Open package.json, remove jquery package from it.
+* Open webpack.config.js, remove following codes at entry section:
 
-* At the root project folder, open command prompt run webpack -w 
+    * `'script!jquery/dist/jquery.min.js'`
 
-# Quick summary #
-React boilerplate which contains all packages that are needed to start React project.
+    * `'script!bootstrap/dist/js/bootstrap.min.js'`
 
-It can be used with regular babel syntax or ES6 - Class syntax.
-
-# Example - Auto Alias #
-Developer does not need require like:
-
-* var CustomComp = require('file_path/CustomComp') 
-* import CustomComp from 'file_path/CustomComp'
-
-Instead, developer can do:
-
-* var CustomComp = require('CustomComp')
-
-* import CustomComp from 'CustomComp'
+* run npm install
+* run webpack --w
+* run node server.js
