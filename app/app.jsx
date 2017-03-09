@@ -1,15 +1,22 @@
+
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Bootstrap from 'bootstrap.css'
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import Example from 'Example'
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 
 
 var App = React.createClass({
 	render: function() {
 		return (
 			<div class="container">
-				<Example />
+				<MuiThemeProvider muiTheme={getMuiTheme()}>
+    			<Example />
+  			</MuiThemeProvider>
 			</div>
 		)
 
